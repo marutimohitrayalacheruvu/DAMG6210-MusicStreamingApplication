@@ -67,7 +67,7 @@ BEGIN
     IF nCount > 0 THEN 
         dbms_output.put_line('User custuser already exists');
     ELSE
-        EXECUTE IMMEDIATE 'create user Taylor_Swift identified by GCQiRbpWBk1q';
+        EXECUTE IMMEDIATE 'create user Taylor_Swift identified by Password#6210';
         EXECUTE IMMEDIATE 'grant ARTIST_ROLE to Taylor_Swift';
         dbms_output.put_line('User custuser created successfully');
     END IF;
@@ -89,7 +89,7 @@ BEGIN
   IF nCount > 0 THEN 
         dbms_output.put_line('User custuser already exists');
     ELSE
-        EXECUTE IMMEDIATE 'create user John identified by GCQiRbpWBk1q';
+        EXECUTE IMMEDIATE 'create user John identified by Password#6210';
         EXECUTE IMMEDIATE 'grant USER_ROLE to John';
         dbms_output.put_line('User custuser created successfully');
     END IF;
@@ -100,4 +100,4 @@ EXCEPTION
         ROLLBACK;
         RAISE;
 END;
-/ 
+/

@@ -10,7 +10,7 @@ BEGIN
       EXECUTE IMMEDIATE 'DROP USER APP_ADMIN CASCADE';
  end if;
 -- create the new user
-EXECUTE IMMEDIATE 'create user APP_ADMIN identified by GCQiRbpWBk1q';
+EXECUTE IMMEDIATE 'create user APP_ADMIN identified by Password#6210';
 EXECUTE IMMEDIATE 'GRANT CONNECT,RESOURCE to APP_ADMIN';
 EXECUTE IMMEDIATE 'GRANT UNLIMITED TABLESPACE TO APP_ADMIN';
 EXECUTE IMMEDIATE 'Grant create view, create sequence,create trigger, create procedure to APP_ADMIN';
