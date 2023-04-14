@@ -23,6 +23,20 @@ EXECUTE insert_playlist('Classical Wonders', 5);
 EXECUTE insert_playlist('Workout Jams', 5);
 
 BEGIN
+  insert_playlist('My Favorites', 6);
+  insert_playlist('Relaxation', 7); 
+  insert_playlist('Rock Classics', 8); 
+  insert_playlist('Hip Hop Mix', 9);
+  insert_playlist('Road Trip', 10); 
+  insert_playlist('Chillout Vibes', 6); 
+  insert_playlist('Summer Hits', 7); 
+  insert_playlist('Pop Party', 8); 
+  insert_playlist('Country Living', 9); 
+  insert_playlist('Throwback Jams', 10); 
+END;
+
+
+BEGIN
   insert_genre('Rock');
   insert_genre('Pop');
   insert_genre('Hip Hop');
