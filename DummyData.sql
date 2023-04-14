@@ -108,3 +108,15 @@ BEGIN
   insert_song('Hip Hop Hooray', 'Joe Doe', 4.9, TO_TIMESTAMP('00:03:15', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 10, 10, 10, 10);
 END;
 
+BEGIN
+  insert_songs_playlist(1, 1);
+  insert_songs_playlist(2, 1);
+  insert_songs_playlist(3, 1);
+  insert_songs_playlist(4, 2);
+  insert_songs_playlist(5, 2);
+  insert_songs_playlist(6, 3);
+  insert_songs_playlist(7, 3);
+  insert_songs_playlist(8, 3);
+  insert_songs_playlist(9, 4);
+  insert_songs_playlist(10, 5);
+END;
