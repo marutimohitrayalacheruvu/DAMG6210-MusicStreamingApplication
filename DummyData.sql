@@ -11,6 +11,16 @@ BEGIN
   insert_or_update_user('John', 'Jackson', 'john.jackson@example.com', 'john123', 'active', '10-JAN-2022');
 END;
 
+EXECUTE insert_playlist('Favorites', 1);
+EXECUTE insert_playlist('Road Trip', 1);
+EXECUTE insert_playlist('Study Music', 2);
+EXECUTE insert_playlist('Chill Vibes', 2);
+EXECUTE insert_playlist('Rock Anthems', 3);
+EXECUTE insert_playlist('Jazz Nights', 3);
+EXECUTE insert_playlist('Hip Hop Beats', 4);
+EXECUTE insert_playlist('Pop Hits', 4);
+EXECUTE insert_playlist('Classical Wonders', 5);
+EXECUTE insert_playlist('Workout Jams', 5);
 
 BEGIN
   insert_genre('Rock');
