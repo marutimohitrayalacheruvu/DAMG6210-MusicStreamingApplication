@@ -120,3 +120,16 @@ BEGIN
   insert_songs_playlist(9, 4);
   insert_songs_playlist(10, 5);
 END;
+
+BEGIN
+insert_favourite(1, 1);
+insert_favourite(2, 1);
+insert_favourite(3, 2);
+insert_favourite(4, 3);
+insert_favourite(5, 4);
+insert_favourite(6, 5);
+insert_favourite(7, 6);
+insert_favourite(8, 7);
+insert_favourite(9, 8);
+insert_favourite(10, 9);
+END;
