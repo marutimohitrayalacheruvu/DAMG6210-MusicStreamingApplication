@@ -423,6 +423,16 @@ END;
 /
 
 BEGIN
+  insert_artist('Bob', 'Dylan', 'A legendary singer-songwriter', 'bob_dylan');
+  insert_artist('Adele', 'Adkins', 'A british Singer', 'Adele');
+  insert_artist('Taylor', 'Swine', 'A Country musician', 'taylor_swift');
+   insert_artist('Joh', 'Doe', 'A talented musician', 'john_doe');
+   insert_artist('Justin', 'Bieber', 'The singer for Baby', 'justin_bieber');
+   insert_artist('Selena', 'Gomez', 'A latin originated Singer', 'selena_gomez');
+END;
+/
+
+BEGIN
   insert_favourite(1,1);
 END;
 /
