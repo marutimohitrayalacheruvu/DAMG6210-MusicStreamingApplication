@@ -1,4 +1,17 @@
 BEGIN
+  insert_genre('Rock');
+  insert_genre('Pop');
+  insert_genre('Hip Hop');
+  insert_genre('Electronic');
+  insert_genre('Jazz');
+  insert_genre('Classical');
+  insert_genre('Folk');
+  insert_genre('Blues');
+  insert_genre('Country');
+  insert_genre('Reggae');
+END;
+
+BEGIN
   insert_album('Folklore', 4);
   insert_album('Evermore', 5);
   insert_album('Sorry', 9);
