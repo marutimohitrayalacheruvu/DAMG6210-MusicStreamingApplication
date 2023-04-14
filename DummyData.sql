@@ -1,4 +1,18 @@
 BEGIN
+  insert_or_update_user('Alice', 'Smith', 'alice.smith@example.com', 'alice123', 'active', '01-JAN-2022');
+  insert_or_update_user('Bob', 'Johnson', 'bob.johnson@example.com', 'bob456', 'active', '02-JAN-2022');
+  insert_or_update_user('Charlie', 'Brown', 'charlie.brown@example.com', 'charlie789', 'inactive', '03-JAN-2022');
+  insert_or_update_user('David', 'Davis', 'david.davis@example.com', 'david321', 'active', '04-JAN-2022');
+  insert_or_update_user('Emily', 'Evans', 'emily.evans@example.com', 'emily654', 'inactive', '05-JAN-2022');
+  insert_or_update_user('Frank', 'Franklin', 'frank.franklin@example.com', 'frank987', 'active', '06-JAN-2022');
+  insert_or_update_user('Grace', 'Garcia', 'grace.garcia@example.com', 'grace234', 'inactive', '07-JAN-2022');
+  insert_or_update_user('Henry', 'Hernandez', 'henry.hernandez@example.com', 'henry567', 'active', '08-JAN-2022');
+  insert_or_update_user('Isabelle', 'Ivanov', 'isabelle.ivanov@example.com', 'isabelle890', 'inactive', '09-JAN-2022');
+  insert_or_update_user('John', 'Jackson', 'john.jackson@example.com', 'john123', 'active', '10-JAN-2022');
+END;
+
+
+BEGIN
   insert_genre('Rock');
   insert_genre('Pop');
   insert_genre('Hip Hop');
