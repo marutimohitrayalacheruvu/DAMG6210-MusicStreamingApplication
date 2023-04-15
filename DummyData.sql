@@ -96,16 +96,16 @@ END;
 select * from artist_album;
 
 BEGIN
-  insert_song('Song 1', 'Artist 1', 4.5, TO_TIMESTAMP('00:03:30.000000000','HH24:MI:SS.FF'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 1, 1, 1, 1);
-  insert_song('Song 2', 'Artist 2', 3.2, TO_TIMESTAMP('00:04:00.000000000','HH24:MI:SS.FF'), 'Spanish', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 2, 2, 2, 2);
-  insert_song('Song 3', 'Artist 3', 4.7, TO_TIMESTAMP('00:03:45.000000000','HH24:MI:SS.FF'), 'French', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 3, 3, 3, 3);
-  insert_song('Song 4', 'Artist 4', 2.8, TO_TIMESTAMP('00:04:20.000000000','HH24:MI:SS.FF'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 4, 4, 4, 4);
-  insert_song('Song 5', 'Artist 5', 4.9, TO_TIMESTAMP('00:03:15.000000000','HH24:MI:SS.FF'), 'Spanish', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 5, 5, 5, 5);
-  insert_song('Song 6', 'Artist 6', 3.1, TO_TIMESTAMP('00:04:30.000000000','HH24:MI:SS.FF'), 'French', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 6, 6, 6, 6);
-  insert_song('Song 7', 'Artist 7', 4.8, TO_TIMESTAMP('00:03:50.000000000','HH24:MI:SS.FF'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 7, 7, 7, 7);
-  insert_song('Song 8', 'Artist 8', 3.9, TO_TIMESTAMP('00:04:10.000000000','HH24:MI:SS.FF'), 'Spanish', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 8, 8, 8, 8);
-  insert_song('Song 9', 'Artist 9', 4.6, TO_TIMESTAMP('00:03:20.000000000','HH24:MI:SS.FF'), 'French', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 9, 9, 9, 9);
-  insert_song('Song 10', 'Artist 10', 3.5, TO_TIMESTAMP('00:04:40.000000000','HH24:MI:SS.FF'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 10, 10, 10, 10);
+  insert_song('Summer Vibes', 'Jane Doe', 4.5, TO_TIMESTAMP('00:03:30.000000000','HH24:MI:SS.FF'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 1, 1, 1, 1);
+  insert_song('Chillout Mix', 'Bob Smith', 3.2, TO_TIMESTAMP('00:04:00.000000000','HH24:MI:SS.FF'), 'Spanish', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 2, 2, 2, 2);
+  insert_song('Throwback Hit', 'Alice Jones', 4.7, TO_TIMESTAMP('00:03:45.000000000','HH24:MI:SS.FF'), 'French', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 3, 3, 3, 3);
+  insert_song('Road Trip Jams', 'David Lee4', 2.8, TO_TIMESTAMP('00:04:20.000000000','HH24:MI:SS.FF'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 4, 4, 4, 4);
+  insert_song('R&B Slow Jams', 'Emily Nguyen', 4.9, TO_TIMESTAMP('00:03:15.000000000','HH24:MI:SS.FF'), 'Spanish', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 5, 5, 5, 5);
+  insert_song('EDM Festival Favorites', 'Michael Chen', 3.1, TO_TIMESTAMP('00:04:30.000000000','HH24:MI:SS.FF'), 'French', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 6, 6, 6, 6);
+  insert_song('Acoustic Sessions', 'Sara Kim', 4.8, TO_TIMESTAMP('00:03:50.000000000','HH24:MI:SS.FF'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 7, 7, 7, 7);
+  insert_song('Pop Party Mix', 'Alex Wong', 3.9, TO_TIMESTAMP('00:04:10.000000000','HH24:MI:SS.FF'), 'Spanish', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 8, 8, 8, 8);
+  insert_song('Rock Anthems', 'Olivia Zhang', 4.6, TO_TIMESTAMP('00:03:20.000000000','HH24:MI:SS.FF'), 'French', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 9, 9, 9, 9);
+  insert_song('Hip Hop Hooray', 'Joe Doe', 3.5, TO_TIMESTAMP('00:04:40.000000000','HH24:MI:SS.FF'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 10, 10, 10, 10);
 END;
 
 
