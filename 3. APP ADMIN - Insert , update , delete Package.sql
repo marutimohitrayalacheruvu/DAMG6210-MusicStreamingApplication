@@ -1104,38 +1104,34 @@ BEGIN
     RETURN;
     END IF;
   --Check if the same user is trying to insert
-    SELECT user_name into l_a_name from artist where artist_id=m_artist_id;
-  
-    IF user = l_a_name THEN
+
     -- Check if album already exists
-        BEGIN
-            SELECT album_id INTO l_album_id
-            FROM album
-            WHERE album_name = p_album_name;
-        EXCEPTION
-            WHEN NO_DATA_FOUND THEN
-            l_album_id := NULL;
-        -- If album exists, update its rating
-        IF l_album_id IS NOT NULL THEN
-            DBMS_OUTPUT.PUT_LINE('Album already exists.');
-        RETURN;
-        END IF;
-
-        -- Otherwise, insert album
-        SELECT album_id_seq.NEXTVAL INTO l_album_id FROM DUAL;
-        INSERT INTO album (album_id, album_name, album_rating)
-        VALUES (l_album_id, p_album_name, p_album_rating);
-
-        DBMS_OUTPUT.PUT_LINE('Album inserted with ID ' || l_album_id);
-        --m
-        -- Adding into the artist_album table
-        BEGIN
-            artist_pkg.insert_artist_album(l_artist_id, l_album_id);
-        END;
-        END;
-    ELSE
-        DBMS_OUTPUT.PUT_LINE('Error: User ' || m_artist_id || ' is not authorized to update this record.');
+    BEGIN
+        SELECT album_id INTO l_album_id
+        FROM album
+        WHERE album_name = p_album_name;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+        l_album_id := NULL;
+    -- If album exists, update its rating
+    IF l_album_id IS NOT NULL THEN
+        DBMS_OUTPUT.PUT_LINE('Album already exists.');
+    RETURN;
     END IF;
+
+    -- Otherwise, insert album
+    SELECT album_id_seq.NEXTVAL INTO l_album_id FROM DUAL;
+    INSERT INTO album (album_id, album_name, album_rating)
+    VALUES (l_album_id, p_album_name, p_album_rating);
+
+    DBMS_OUTPUT.PUT_LINE('Album inserted with ID ' || l_album_id);
+    --m
+    -- Adding into the artist_album table
+    BEGIN
+        artist_pkg.insert_artist_album(l_artist_id, l_album_id);
+    END;
+    END;
+   
     EXCEPTION
     WHEN NO_DATA_FOUND THEN
       l_artist_id := NULL;

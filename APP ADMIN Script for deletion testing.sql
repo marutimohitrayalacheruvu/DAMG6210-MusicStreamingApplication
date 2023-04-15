@@ -1,17 +1,14 @@
-Select * from songs;
-SET SERVEROUTPUT ON;
-BEGIN
-    app_admin.delete_pkg.delete_song(11);
-END;
-/
-
 SET SERVEROUTPUT ON;
 Select * from songs;
 Select * from artist;
 Select * from album;
 Select * from songs;
 Select * from artist_album;
-SET SERVEROUTPUT ON
+BEGIN
+    app_admin.delete_pkg.delete_song(11);
+END;
+/
+SET SERVEROUTPUT ON;
 BEGIN
     app_admin.delete_pkg.delete_artist(2);
 END;
@@ -63,3 +60,5 @@ FROM user_recommendations;
 SELECT 'Report to show the top rated album' AS report_title FROM dual;
 SELECT 'Album: ' || album_name || ', Average Rating: ' || ROUND(album_rating, 2) AS album_rating
 FROM top_rated_album;
+
+COMMIT;

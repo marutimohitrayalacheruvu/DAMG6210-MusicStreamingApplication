@@ -1,3 +1,4 @@
+SET SERVEROUTPUT ON;
 DROP USER APP_ADMIN;
 DROP USER TAYLOR_SWIFT;
 DROP USER JOHN;
@@ -5,16 +6,8 @@ DROP ROLE ARTIST_ROLE;
 DROP ROLE USER_ROLE;
 
 
-
-
-select * FROM DBA_ROLES;
-
-
-
 -- Super_Admin creates the APP_ADMIN and Roles(USER_ROLE, ARTIST_ROLE)
 -- APP_ADMIN will create the users and assign the specific roles created by Super_Admin
-
-select user from dual;
 
 ------------------------------------APP_ADMIN----------------------------------------------------
 Declare 

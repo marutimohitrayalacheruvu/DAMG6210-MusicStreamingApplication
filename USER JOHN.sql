@@ -1,12 +1,6 @@
 
 select * from app_admin.users;
 
-select * from app_admin.songs;
-
-select * from app_admin.favourite;
-select * from app_admin.playlist;
-select * from app_admin.songs_playlist;
-
 SET SERVEROUTPUT ON;
 ------------- Update User record from package
 BEGIN
@@ -14,7 +8,8 @@ BEGIN
 END;
 /
 
-
+select * from app_admin.users;
+select * from app_admin.favourite;
 ---------- Insert record to Favourite
 BEGIN
   app_admin.user_pkg.add_favorite_from_user(p_song_id => 1, p_user_id => 11);
@@ -24,7 +19,9 @@ BEGIN
 END;
 /
 
+select * from app_admin.favourite;
 
+select * from app_admin.favourite;
 
 ---------- Delete record from Favourite
 BEGIN
@@ -32,6 +29,8 @@ BEGIN
 END;
 /
 SET SERVEROUTPUT ON;
+select * from app_admin.favourite;
+select * from app_admin.playlist;
 
 --------------- Insert to Playlist
 BEGIN
@@ -40,22 +39,26 @@ BEGIN
 END;
 /
 
+select * from app_admin.playlist;
+SELECT * from app_admin.songs_playlist;
+
 -------- Update or Insert the record songs_playlist Table
 BEGIN
   app_admin.user_pkg.add_song_to_playlist(p_song_id => 3, p_playlist_id => 11, p_user_id => 11);
   app_admin.user_pkg.add_song_to_playlist(p_song_id => 1, p_playlist_id => 12, p_user_id => 11);
-  app_admin.user_pkg.add_song_to_playlist(p_song_id => 4, p_playlist_id => 13, p_user_id => 11);
+  app_admin.user_pkg.add_song_to_playlist(p_song_id => 4, p_playlist_id => 12, p_user_id => 11);
 END;
 /
 COMMIT;
-
-SET SERVEROUTPUT ON;
+SELECT * from app_admin.songs_playlist;
 -------- Delete record from songs_playlist Table
 BEGIN
-  app_admin.user_pkg.DELETE_SONG_FROM_PLAYLIST(p_song_id => 4, p_playlist_id => 11, p_user_id => 11); -- replace with actual song_id, playlist_id, and user_id values
+  app_admin.user_pkg.DELETE_SONG_FROM_PLAYLIST(p_song_id => 4, p_playlist_id => 12, p_user_id => 11); -- replace with actual song_id, playlist_id, and user_id values
 END;
 /
 COMMIT;
+SELECT * from app_admin.songs_playlist;
+SELECT * from app_admin.playlist;
 
 --------Delete records from Playlist and related records from songs_playlist
 
@@ -63,6 +66,7 @@ BEGIN
   app_admin.user_pkg.DELETE_PLAYLIST(p_playlist_id => 11, p_user_id => 11); -- replace with actual song_id, playlist_id, and user_id values
 END;
 /
+SELECT * from app_admin.playlist;
 
 
 ------------ Views of User

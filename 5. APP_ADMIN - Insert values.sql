@@ -14,7 +14,7 @@ BEGIN
 END;
 /
 COMMIT;
-
+SELECT * from users;
 BEGIN
   insert_pkg.insert_playlist('My Favorites', 6);
   insert_pkg.insert_playlist('Relaxation', 7); 
@@ -29,7 +29,7 @@ BEGIN
 END;
 /
 COMMIT;
-
+SELECT * from playlist;
 BEGIN
   insert_pkg.insert_genre('Rock');
   insert_pkg.insert_genre('Pop');
@@ -44,7 +44,7 @@ BEGIN
 END;
 /
 COMMIT;
-
+SELECT * from genre;
 BEGIN
   insert_pkg.insert_album('My World 2.0', 8.1);
   insert_pkg.insert_album('Folklore', 8.9);
@@ -70,7 +70,7 @@ BEGIN
 END;
 /
 COMMIT;
-
+SELECT * FROM ARTIST;
 BEGIN
   insert_pkg.insert_artist_album(2,1);
   insert_pkg.insert_artist_album(1,2);
@@ -85,7 +85,7 @@ BEGIN
 END;
 /
 COMMIT;
-
+SELECT * FROM ARTIST_ALBUM;
 BEGIN
   insert_pkg.insert_song('Love Story', 'Taylor Swift', 9.1, TO_TIMESTAMP('00:03:30.000000000','HH24:MI:SS.FF'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 1, 1, 3, 1);
   insert_pkg.insert_song('White Horse', 'Taylor Swift',8.9, TO_TIMESTAMP('00:04:00.000000000','HH24:MI:SS.FF'), 'Spanish', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 2, 2, 3, 1);
@@ -105,7 +105,7 @@ BEGIN
 END;
 /
 COMMIT;
-
+SELECT * FROM SONGS;
 BEGIN
   insert_pkg.insert_songs_playlist(1, 1);
   insert_pkg.insert_songs_playlist(2, 1);
@@ -121,10 +121,11 @@ BEGIN
   insert_pkg.insert_songs_playlist(2, 7);
   insert_pkg.insert_songs_playlist(4, 8);
   insert_pkg.insert_songs_playlist(7, 8);
+  insert_pkg.insert_songs_playlist(11, 8);
 END;
 /
 COMMIT;
-
+SELECT * FROM SONGS_PLAYLIST;
 BEGIN
   insert_pkg.insert_favourite(1, 1);
   insert_pkg.insert_favourite(1, 2);
@@ -140,3 +141,4 @@ BEGIN
 END;
 /
 COMMIT;
+SELECT * FROM FAVOURITE;
