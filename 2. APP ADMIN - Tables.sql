@@ -90,7 +90,7 @@ CREATE SEQUENCE album_id_seq
 create table album (
     album_id NUMBER DEFAULT album_id_seq.NEXTVAL PRIMARY KEY,
     album_name varchar(100),
-    album_rating number(10)
+    album_rating FLOAT
 )
 /
 
@@ -198,6 +198,5 @@ create table favourite (
 
 -- commit tables creation
 COMMIT;
-
 
 
