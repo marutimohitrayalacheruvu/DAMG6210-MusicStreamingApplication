@@ -63,3 +63,11 @@ END;
 
 
 
+------------ Views of User
+select * from app_admin.songs_by_rating;
+select * from app_admin.artist_song_count;
+select * from app_admin.user_genre_preference;
+select * from app_admin.user_favorites;
+select * from app_admin.user_recommendations;
+select * from app_admin.top_rated_album;
+
