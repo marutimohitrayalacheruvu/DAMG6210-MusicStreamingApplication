@@ -10,7 +10,7 @@ select * from app_admin.songs_playlist;
 
 ------------- Update User record 
 BEGIN
-  app_admin.update_user_from_user(p_user_id => 12, p_first_name => 'Joh', p_last_name => 'Doe', p_email => 'john.doe@exampleee.ccccccom', p_user_name => 'JOHNDOE');
+  app_admin.update_user_from_user(p_user_id => 12, p_first_name => 'John', p_last_name => 'Doe', p_email => 'john.doe@exaddddmple', p_user_name => 'JOHNDOE');
 END;
 
 
@@ -58,13 +58,8 @@ COMMIT;
 --------Delete records from Playlist and related records from songs_playlist
 
 BEGIN
-  app_admin.DELETE_PLAYLIST(p_playlist_id => 11, p_user_id => 12); -- replace with actual song_id, playlist_id, and user_id values
+  app_admin.DELETE_PLAYLIST(p_playlist_id => 12, p_user_id => 12); -- replace with actual song_id, playlist_id, and user_id values
 END;
 
-DELETE FROM songs_playlist WHERE playlist_id = 3;
-commit;
 
-SELECT COUNT(*) INTO l_song_count FROM app_admin.users WHERE user_id = 2;
 
-select count(*) FROM app_admin.users WHERE user_id = 2  and user_name = user;
-select * from app_admin.users;
