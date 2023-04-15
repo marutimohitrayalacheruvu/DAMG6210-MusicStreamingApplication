@@ -96,17 +96,18 @@ END;
 select * from artist_album;
 
 BEGIN
-  insert_song('Summer Vibes', 'Jane	Doe', 4.5, TO_TIMESTAMP('00:03:30', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 1, 1, 1, 1);
-  insert_song('Chillout Mix', 'Bob	Smith', 4.0, TO_TIMESTAMP('00:04:20', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 2, 2, 2, 2);
-  insert_song('Throwback Hit', 'Alice	Jones', 4.2, TO_TIMESTAMP('00:05:15', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 3, 3, 3, 3);
-  insert_song('Road Trip Jams', 'David	Lee4', 4.8, TO_TIMESTAMP('00:02:45', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 4, 4, 4, 4);
-  insert_song('R&B Slow Jams', 'Emily	Nguyen', 4.6, TO_TIMESTAMP('00:03:50', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 5, 5, 5, 5);
-  insert_song('EDM Festival Favorites', 'Michael	Chen', 4.1, TO_TIMESTAMP('00:04:10', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 6, 6, 6, 6);
-  insert_song('Acoustic Sessions', 'Sara	Kim', 4.3, TO_TIMESTAMP('00:03:25', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 7, 7, 7, 7);
-  insert_song('Pop Party Mix', 'Alex	Wong', 4.4, TO_TIMESTAMP('00:02:55', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 8, 8, 8, 8);
-  insert_song('Rock Anthems', 'Olivia	Zhang', 4.7, TO_TIMESTAMP('00:04:05', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 9, 9, 9, 9);
-  insert_song('Hip Hop Hooray', 'Joe Doe', 4.9, TO_TIMESTAMP('00:03:15', 'HH24:MI:SS'), 'English', TO_DATE('2023-04-14', 'YYYY-MM-DD'), 10, 10, 10, 10);
+  insert_song('Summer Vibes', 'Jane Doe', 4.5, '00:03:30', 'English', '2023-04-14', 1, 1, 1, 1);
+  insert_song('Chillout Mix', 'Bob Smith', 4.0, '00:04:20', 'English', '2023-04-14', 2, 2, 2, 2);
+  insert_song('Throwback Hit', 'Alice Jones', 4.2, '00:05:15', 'English', '2023-04-14', 3, 3, 3, 3);
+  insert_song('Road Trip Jams', 'David Lee4', 4.8, '00:02:45', 'English', '2023-04-14', 4, 4, 4, 4);
+  insert_song('R&B Slow Jams', 'Emily Nguyen', 4.6, '00:03:50', 'English', '2023-04-14', 5, 5, 5, 5);
+  insert_song('EDM Festival Favorites', 'Michael Chen', 4.1, '00:04:10', 'English', '2023-04-14', 6, 6, 6, 6);
+  insert_song('Acoustic Sessions', 'Sara Kim', 4.3, '00:03:25', 'English', '2023-04-14', 7, 7, 7, 7);
+  insert_song('Pop Party Mix', 'Alex Wong', 4.4, '00:02:55', 'English', '2023-04-14', 8, 8, 8, 8);
+  insert_song('Rock Anthems', 'Olivia Zhang', 4.7, '00:04:05', 'English', '2023-04-14', 9, 9, 9, 9);
+  insert_song('Hip Hop Hooray', 'Joe Doe', 4.9, '00:03:15', 'English', '2023-04-14', 10, 10, 10, 10);
 END;
+
 
 BEGIN
   insert_songs_playlist(1, 1);
